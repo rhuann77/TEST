@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif, "Times New Roman", Times, serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #121212;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #34aeb3;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #121212;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero-text button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text button:hover {
+    background-color: #ddd;
+}
+
+.hero-image img {
+    width: 900px;
+}
+
+.benefits {
+    text-align: center;
+    padding: 50px;
+    background-color: #121212;
+    color: #fff;
+}
+
+.benefits h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.benefit-items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit-item img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#reservarBtn {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reservarBtn:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  section {
+    background-image: radial-gradient(#121212, #121212);
+    height: 100vh;
+    position: relative;
+  
+    & .list {
+      width: 70vw;
+      height: 100%;
+      margin: auto;
+      position: relative;
+  
+      & .item {
+        position: absolute;
+        inset: 0;
+  
+        & .car-img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 70%;
+  
+          & img {
+            width: 100%;
+            transform: rotate(-30deg);
+          }
+        }
+  
+        & .content {
+          position: absolute;
+          right: 100px;
+          width: 70%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: end;
+          gap: 20px;
+  
+          & .car-information {
+            font-weight: bold;
+          }
+  
+          & h2 {
+            font-size: 3.5em;
+            line-height: 1em;
+            font-family: "League Gothic", sans-serif, "Times New Roman", Times,
+              serif;
+          }
+  
+          & .description {
+            color: #d9d9d9;
+            font-size: 12px;
+            text-align: right;
+            padding-top: 20px;
+            max-width: 400px;
+          }
+  
+          & .information {
+            border-radius: 30px;
+            font-size: 16px;
+            height: 35px;
+            width: 120px;
+            text-transform: uppercase;
+            border: 2px solid #8d8d8d;
+            background-color: #34aeb3;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: "League Gothic", sans-serif, "Times New Roman", Times,
+              serif;
+          }
+        }
+      }
+  
+      &::before {
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        top: 50%;
+        border-top: 1px solid #fff;
+      }
+    }
+  
+    .arrowns {
+      width: 70vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -25px);
+      display: flex;
+      justify-content: space-between;
+  
+      & button:nth-child(1) {
+        & img {
+          transform: scale(-1);
+        }
+      }
+  
+      & button {
+        top: 60%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+  
+        & img {
+          width: 30px;
+          margin-top: 4px;
+          cursor: pointer;
+        }
+  
+        &:hover {
+          background-color: #34aeb3;
+        }
+      }
+    }
+  
+    .indicators {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 200px;
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      gap: 15px;
+  
+      & .number {
+        font-size: 5em;
+        font-family: "League Gothic", sans-serif, "Times New Roman", Times, serif;
+      }
+  
+      & ul {
+        display: flex;
+        gap: 10px;
+  
+        & li {
+          height: 5px;
+          width: 50px;
+          background-color: #34aeb3;
+          border-radius: 5px;
+          transition: 0.5s;
+        }
+  
+        & .active {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  
+  section {
+    & .list {
+      --calculation: 1;
+  
+      & .item {
+        transform: translateX(calc(100vw * var(--calculation)));
+        transition: 0.5s;
+        opacity: 0;
+  
+        & .car-img {
+          & img {
+            transform: rotate(0);
+            transition: 0.5s;
+            transition-delay: 0.3s;
+          }
+        }
+  
+        & .content {
+          & .car-information,
+          h2,
+          .description,
+          .information {
+            transform: translateX(calc(200px * var(--calculation)));
+            transition: 0.7s;
+            transition-delay: 0.3s;
+            opacity: 0;
+          }
+  
+          & h2 {
+            transition-delay: 0.5s;
+          }
+  
+          & .description {
+            transition-delay: 0.7s;
+          }
+  
+          & .information {
+            transition-delay: 0.9s;
+          }
+        }
+      }
+  
+      & .active {
+        transform: translateX(0);
+        transition: 0.5s;
+        opacity: 1;
+  
+        & .car-img {
+          & img {
+            transform: rotate(-20deg);
+          }
+        }
+  
+        & .content {
+          & .car-information,
+          h2,
+          .description,
+          .information {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
